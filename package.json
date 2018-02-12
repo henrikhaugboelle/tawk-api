@@ -1,0 +1,38 @@
+{
+  "name": "@henrikhaugboelle/tawk-api",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "node ./lib/index.js",
+    "development": "NODE_ENV=development babel-node ./src/index.js",
+    "build": "babel src --out-dir lib",
+    "postinstall": "npm run build",
+    "lint": "eslint src"
+  },
+  "dependencies": {
+    "dataloader": "^1.3.0",
+    "dotenv": "^4.0.0",
+    "glue": "^5.0.0",
+    "graphql": "^0.12.3",
+    "graphql-server-hapi": "^1.3.2",
+    "graphql-subscriptions": "^0.5.6",
+    "mongoose": "^4.13.9",
+    "subscriptions-transport-ws": "^0.9.4"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.0.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-runtime": "^6.26.0",
+    "eslint": "^4.7.2",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.4.0"
+  },
+  "engines": {
+    "node": "^v8.9.0",
+    "npm": "^5.5.0"
+  }
+}
